@@ -1,11 +1,14 @@
-import React from 'react'
+import axiosData from "../axios";
+import Form from "../components/form/index";
 
 const AxiosPost = () => {
+
+  const postData = (name) =>   axiosData.post("/users", { name: name }).then( alert("Successfully added")).catch(e => alert(e.message));
+
+
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
-  )
+    <Form  handler={postData} />
+  );
 }
 
 export default AxiosPost
