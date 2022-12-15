@@ -9,10 +9,8 @@ const Form = ({handler}) => {
       e.preventDefault();
      handler(userName.current.value);
     }}>
-      <div>
         <div className="user-name" ><input type="text" ref={userName} /></div>
         <div className="btn submit-btn"><input type="submit" /></div>
-      </div>
     </form>
     </FormStyle>
   );

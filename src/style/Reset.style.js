@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ResetStyle = styled.html`
+const ResetStyle = styled.div`
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code

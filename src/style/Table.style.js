@@ -1,4 +1,9 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const rotate = keyframes`
+ from{ transform:rotate(0deg) }
+ to{ transform:rotate(360deg) }
+`;
 
 const TableStyle = styled.section`
 padding:40px 0;
@@ -33,6 +38,15 @@ ul {
       text-align:center;
       text-transform:capitalize;
     }
+
+    @media only screen and (max-width: 540px) {
+
+      margin:10px 0;
+
+      flex-basis:95%;
+
+      &:nth-child(3n) { margin-right:0 }
+    }
   }
 
   .error { 
@@ -44,6 +58,25 @@ ul {
     font-weight:700;
     text-align:center;
     text-transform:capitalize;
+
+    .icon-loading {
+      position:relative;
+      text-indent:-9999px;
+
+      &::after{
+        width:100%;
+        height:20px;
+        display:block;
+        position:absolute;
+        animation:${rotate} 3s;
+        color:#2471A3;
+        content:'\f1ce';
+        float:right;
+        font-family:FontAwesome;
+        font-weight:900;
+        text-indent:0;
+      }
+    }
   }
 }
 `;

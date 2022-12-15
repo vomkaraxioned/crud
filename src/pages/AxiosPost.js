@@ -1,5 +1,6 @@
 import axiosData from "../axios";
 import Form from "../components/Form/index";
+import Title from "../components/Title/index"
 
 const AxiosPost = () => {
 
@@ -7,7 +8,10 @@ const AxiosPost = () => {
 
 
   return (
+    <>
+    <Title name="Post"/>
     <Form  handler={postData} />
+    </>
   );
 }
 
