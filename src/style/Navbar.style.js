@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-const NavStyle = styled.nav`
+const NavStyle = styled.header`
+
   ul {
     padding:10px 0;
     border-bottom:1px solid #000;
@@ -21,8 +22,6 @@ const NavStyle = styled.nav`
       &:hover { color: #17202A }
      }
   }
-
-
 
 `;
 

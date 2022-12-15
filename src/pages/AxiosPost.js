@@ -1,5 +1,5 @@
 import axiosData from "../axios";
-import Form from "../components/form/index";
+import Form from "../components/Form/index";
 
 const AxiosPost = () => {
 

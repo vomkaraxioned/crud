@@ -5,16 +5,14 @@ import  NavStyle from "../../style/Navbar.style";
 function Navbar() {  
 
   return (
- <NavStyle color="#f00">
-    <header>
-    <nav>
+   <NavStyle color="#f00">
+     <nav>
     <ul className="navigation">
    {
     pages.map(({url,name})=><NavItem link={url} name={name} key={name}/>)
    }
     </ul>
     </nav>
-  </header>
  </NavStyle>
 
   );

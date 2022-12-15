@@ -6,7 +6,6 @@ import Title from "../Title/index";
 const Table = ({data,flag})=>{
   return (
     <TableStyle>
-   <section className="userDetails">
      <Title name="Users"/>
      <ul className="users">
       {
@@ -15,7 +14,6 @@ const Table = ({data,flag})=>{
         }):<RowForError error={data}/>
       }
      </ul>
-   </section>
    </TableStyle>
   );
 };
