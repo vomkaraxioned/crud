@@ -5,7 +5,7 @@ import  NavStyle from "../../style/Navbar.style";
 function Navbar() {  
 
   return (
- <NavStyle>
+ <NavStyle color="#f00">
     <header>
     <nav>
     <ul className="navigation">

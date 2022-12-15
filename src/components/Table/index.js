@@ -1,10 +1,13 @@
 import Row from "./Row";
 import RowForError from "./RowForError";
+import TableStyle from "../../style/Table.style";
+import Title from "../Title/index";
 
 const Table = ({data,flag})=>{
   return (
+    <TableStyle>
    <section className="userDetails">
-     <h1>Users</h1>
+     <Title name="Users"/>
      <ul className="users">
       {
        flag?data.map(({id,name})=>{
@@ -13,6 +16,7 @@ const Table = ({data,flag})=>{
       }
      </ul>
    </section>
+   </TableStyle>
   );
 };
 

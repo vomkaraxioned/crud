@@ -6,7 +6,7 @@ const AxiosGet = () => {
 
   const [data,setData] = useState([]),
   [flag,setFlag] = useState(false),
-  [error,setError] = useState("nothing");
+  [error,setError] = useState("Loading Please Wait......");
 
 useEffect(()=>{
   axiosData.get("/users").then(res=>{

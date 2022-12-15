@@ -5,7 +5,6 @@ import AxiosDelete from "./pages/AxiosDelete";
 const pages = [
   {url:"/",name:"Get",component:<AxiosGet/>},
   {url:"/post",name:"Post",component:<AxiosPost/>},
-  // {url:"/AxiosPut",name:"AxiosPut",component:<AxiosPut/>},
   {url:"/delete",name:"Delete",component:<AxiosDelete/>}
 ];
 

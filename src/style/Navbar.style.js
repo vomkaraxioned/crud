@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 const NavStyle = styled.nav`
   ul {
+    padding:10px 0;
+    border-bottom:1px solid #000;
     display:flex;
-    list-style-type:none;
+    background:#2E86C1 ;
   }
 
   li { 
@@ -12,10 +14,11 @@ const NavStyle = styled.nav`
     &:last-child { margin-right:0 }
 
     a{ 
-      background:#0f0;
-      color:#00f;
+      color:#fff;
       font-size:16px;
-      text-decoration:none;
+      font-weight:900;
+
+      &:hover { color: #17202A }
      }
   }
 
