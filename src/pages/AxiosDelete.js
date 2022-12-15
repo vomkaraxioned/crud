@@ -1,5 +1,6 @@
 import axiosData from "../axios";
 import Form from "../components/Form/index";
+import Title from "../components/Title/index"
 
 const AxiosPost = () => {
 
@@ -16,7 +17,10 @@ const AxiosPost = () => {
 
 
   return (
-    <Form handler={deleteData} />
+    <>
+      <Title name="Delete" />
+      <Form handler={deleteData} btnName="Delete"/>
+    </>
   );
 }
 
