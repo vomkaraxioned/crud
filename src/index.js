@@ -4,16 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
-import ResetStyle from "./style/Reset.style";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ResetStyle>
    <BrowserRouter>
    <App />
    </BrowserRouter>
-   </ResetStyle>
   </React.StrictMode>
 );
 

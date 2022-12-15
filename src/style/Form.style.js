@@ -3,7 +3,7 @@ import styled from "styled-components";
 const FormStyle = styled.div`
 
   .user-form { 
-    width: 70%;
+    width: 60%;
     border:1px solid #454545;
     border-radius: 5px;
     margin: 50px auto;
@@ -23,9 +23,20 @@ const FormStyle = styled.div`
 
         &[type=submit] { background: #3498DB  }
       }
+
+      &:first-child { flex-basis: 90% }
+
+
+      @media only screen and (max-width: 540px) { 
+        &:first-child { flex-basis: 70% }
+        &:last-child { flex-basis: 30% }
+      }
+
     }
 
-    div:first-child { flex-basis: 90% }
+    @media only screen and (max-width: 540px) { 
+      width: 95%;
+    }
    }
 `;
 
